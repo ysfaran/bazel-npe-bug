@@ -25,6 +25,10 @@ remote_java_repository(
     version = "11",
 )
 
+register_toolchains(
+    "//:repository_default_toolchain",
+)
+
 load("@rules_jvm_external//:defs.bzl", "maven_install")
 load("@rules_jvm_external//:specs.bzl", "maven")
 
