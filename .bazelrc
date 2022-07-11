@@ -1,1 +1,6 @@
 build --java_language_version=11
+build --tool_java_language_version=11
+build --tool_java_runtime_version=amazon_corretto_11
+build --java_runtime_version=amazon_corretto_11
+build --extra_toolchains=@amazon_corretto_macos//:all
+build --repo_env=JAVA_HOME=../amazon_corretto_macos/
